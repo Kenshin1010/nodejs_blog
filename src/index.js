@@ -7,6 +7,14 @@ const port = 3000;
 
 app.use(express.static(path.join(__dirname, "public")));
 
+app.use(
+  express.urlencoded({
+    extended: true,
+  })
+);
+app.use(express.json());
+// XMLHttpRequest, fetch, axios,
+
 // HTTP logger
 app.use(morgan("combined"));
 
@@ -17,19 +25,21 @@ app.set("views", path.join(__dirname, "resources/views"));
 
 // Routes
 app.get("/", (req, res) => {
-  // return res.send(`<h1 style="color:red;">Hello World!</h1>`);
   res.render("home");
 });
 
 app.get("/news", (req, res) => {
-  console.log("query: ", req.query.q);
+  // console.log("query: ", req.query.q);
   res.render("news");
 });
 
 app.get("/search", (req, res) => {
-  // console.log("query: ", req.query.q);
-  // http://localhost:3000/search?q=f8%20lap%20trinh&ref=mycv&author=sondn
   res.render("search");
+});
+
+app.post("/search", (req, res) => {
+  console.log(req.body);
+  res.send("");
 });
 
 // 127.0.0.1 ~ localhost
