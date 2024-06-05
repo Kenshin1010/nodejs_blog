@@ -22,11 +22,13 @@ app.get("/", (req, res) => {
 });
 
 app.get("/news", (req, res) => {
+  console.log("query: ", req.query.q);
   res.render("news");
 });
 
 app.get("/search", (req, res) => {
-  console.log("query: ", req.query.q);
+  // console.log("query: ", req.query.q);
+  // http://localhost:3000/search?q=f8%20lap%20trinh&ref=mycv&author=sondn
   res.render("search");
 });
 
