@@ -8,6 +8,15 @@ h2 {
   color: green;
 }
 
+a {
+  text-decoration: none;
+  color: #101010;
+}
+
 .card-course-item {
   margin-top: 16px;
+}
+
+.card-title {
+  min-height: 48px;
 }
