@@ -230,6 +230,11 @@ async-foreach@^0.1.3:
   resolved "https://registry.npmjs.org/async-foreach/-/async-foreach-0.1.3.tgz"
   integrity sha512-VUeSMD8nEGBWaZK4lizI1sf3yEC7pnAQ/mrI7pC2fBz2s/tq5jWWEngTwaf0Gruu/OoXRGLGg1XFqpYBiGTYJA==
 
+async@^1.5.0:
+  version "1.5.2"
+  resolved "https://registry.npmjs.org/async/-/async-1.5.2.tgz"
+  integrity sha512-nSVgobk4rv61R9PUSDtYt7mPVB2olxNR5RWJcAsH676/ef11bUZwvu7+RGYrYauVdDPcO519v68wRhXQtxsV9w==
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
@@ -1652,6 +1657,15 @@ mongodb@6.6.2:
     bson "^6.7.0"
     mongodb-connection-string-url "^3.0.0"
 
+mongoose-slug-generator@^1.0.4:
+  version "1.0.4"
+  resolved "https://registry.npmjs.org/mongoose-slug-generator/-/mongoose-slug-generator-1.0.4.tgz"
+  integrity sha512-YTluRZROhrHgcncstJTJsxT4K6xR2xIGtF9a0uf4Z1mNFADBVoyanezdKgjQBxN2zfB8PH6wpU8mh4AFxL4+4w==
+  dependencies:
+    async "^1.5.0"
+    shortid "^2.2.4"
+    speakingurl "^7.0.0"
+
 mongoose@^8.4.1:
   version "8.4.1"
   resolved "https://registry.npmjs.org/mongoose/-/mongoose-8.4.1.tgz"
@@ -1707,6 +1721,11 @@ nan@^2.17.0:
   version "2.19.0"
   resolved "https://registry.npmjs.org/nan/-/nan-2.19.0.tgz"
   integrity sha512-nO1xXxfh/RWNxfd/XPfbIfFk5vgLsAxUR9y5O0cHMJu/AW9U95JLXqthYHjEp+8gQ5p96K9jUp8nbVOxCdRbtw==
+
+nanoid@^2.1.0:
+  version "2.1.11"
+  resolved "https://registry.npmjs.org/nanoid/-/nanoid-2.1.11.tgz"
+  integrity sha512-s/snB+WGm6uwi0WjsZdaVcuf3KJXlfGl2LcxgwkEwJF0D/BWzVWAZW/XY4bFaiR7s0Jk3FPvlnepg1H1b1UwlA==
 
 negotiator@^0.6.2, negotiator@^0.6.3, negotiator@0.6.3:
   version "0.6.3"
@@ -2232,6 +2251,13 @@ shebang-regex@^3.0.0:
   resolved "https://registry.npmjs.org/shebang-regex/-/shebang-regex-3.0.0.tgz"
   integrity sha512-7++dFhtcx3353uBaq8DDR4NuxBetBzC7ZQOhmTQInHEd6bSrXdiEyzCvG07Z44UYdLShWUyXt5M/yhz8ekcb1A==
 
+shortid@^2.2.4:
+  version "2.2.16"
+  resolved "https://registry.npmjs.org/shortid/-/shortid-2.2.16.tgz"
+  integrity sha512-Ugt+GIZqvGXCIItnsL+lvFJOiN7RYqlGy7QE41O3YC1xbNSeDGIRO7xg2JJXIAj1cAGnOeC1r7/T9pgrtQbv4g==
+  dependencies:
+    nanoid "^2.1.0"
+
 side-channel@^1.0.4:
   version "1.0.6"
   resolved "https://registry.npmjs.org/side-channel/-/side-channel-1.0.6.tgz"
@@ -2358,6 +2384,11 @@ spdx-license-ids@^3.0.0:
   version "3.0.18"
   resolved "https://registry.npmjs.org/spdx-license-ids/-/spdx-license-ids-3.0.18.tgz"
   integrity sha512-xxRs31BqRYHwiMzudOrpSiHtZ8i/GeionCBDSilhYRj+9gIcI8wCZTlXZKu9vZIVqViP3dcp9qE5G6AlIaD+TQ==
+
+speakingurl@^7.0.0:
+  version "7.0.0"
+  resolved "https://registry.npmjs.org/speakingurl/-/speakingurl-7.0.0.tgz"
+  integrity sha512-b3w3MPlZxf/s3YhzyD12e9yw3bdl/23gNgxq2fUeKTJ1jt0ZTTTddZTl5SaQv4GwCNJ56DM3kOeRKeO9xab7wQ==
 
 sprintf-js@^1.1.3:
   version "1.1.3"
