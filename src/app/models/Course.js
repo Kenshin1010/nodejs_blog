@@ -13,8 +13,8 @@ const Course = new Schema(
     level: { type: String },
     slug: {
       type: String,
-      slug: "name",
-      // unique: true
+      slug: ["name"],
+      unique: true,
     },
   },
   {
