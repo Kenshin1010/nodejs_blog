@@ -14,11 +14,30 @@
     </button>
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link active" aria-current="page" href="#">Home</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="/courses/create">Đăng khoá học</a>
+        <li class="nav-item dropdown">
+          <a
+            class="nav-link dropdown-toggle"
+            href="#"
+            role="button"
+            data-bs-toggle="dropdown"
+            aria-expanded="false"
+          >
+            <img
+              src="https://lh3.googleusercontent.com/ogw/AF2bZygZ6Fjz3AKszH9SsovXIzWqHIAdy76rZsrAp0qYEdbINQ=s64-c-mo"
+              alt=""
+              class="user-avatar"
+            />
+            Tuan Anh
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="/courses/create">Đăng khoá học</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="/me/stored/courses">Khoá học của
+                tôi</a></li>
+            <li><a class="dropdown-item" href="/me/stored/news">Bài viết của tôi</a></li>
+            <li><hr class="dropdown-divider" /></li>
+            <li><a class="dropdown-item" href="#">Đăng xuất</a></li>
+          </ul>
         </li>
       </ul>
     </div>
