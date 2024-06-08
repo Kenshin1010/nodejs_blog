@@ -7,7 +7,7 @@ class CourseController {
     Course.findOne({ slug: req.params.slug })
       .then((course) =>
         res.render("courses/show", {
-          course: mongooseToObject(course),
+          course: mongooseToObject(course)
         })
       )
       .catch(next);
@@ -34,7 +34,7 @@ class CourseController {
     Course.findById(req.params.id)
       .then((course) =>
         res.render("courses/edit", {
-          course: mongooseToObject(course),
+          course: mongooseToObject(course)
         })
       )
       .catch(next);
@@ -66,6 +66,19 @@ class CourseController {
     Course.restore({ _id: req.params.id })
       .then(() => res.redirect("back"))
       .catch(next);
+  }
+
+  //   [POST] /courses/handle-form-actions
+  handleFormActions(req, res, next) {
+    switch (req.body.action) {
+      case "delete":
+        Course.delete({ _id: { $in: req.body.courseIds } })
+          .then(() => res.redirect("back"))
+          .catch(next);
+        break;
+      default:
+        res.json({ message: "Action is invalid!" });
+    }
   }
 
   // SOFT DELETE: Delete(Soft), Restore, Force Delete
