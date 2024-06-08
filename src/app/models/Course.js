@@ -1,5 +1,5 @@
 const mongoose = require("mongoose");
-const slug = require("mongoose-slug-generator");
+const slug = require("mongoose-slug-updater");
 const mongooseDelete = require("mongoose-delete");
 
 const Schema = mongoose.Schema;
@@ -14,7 +14,7 @@ const Course = new Schema(
     slug: {
       type: String,
       slug: ["name"],
-      // unique: true,
+      unique: true,
     },
   },
   {
