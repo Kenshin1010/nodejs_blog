@@ -240,6 +240,11 @@ async@^1.5.0:
   resolved "https://registry.npmjs.org/async/-/async-1.5.2.tgz"
   integrity sha512-nSVgobk4rv61R9PUSDtYt7mPVB2olxNR5RWJcAsH676/ef11bUZwvu7+RGYrYauVdDPcO519v68wRhXQtxsV9w==
 
+async@^3.2.5:
+  version "3.2.5"
+  resolved "https://registry.npmjs.org/async/-/async-3.2.5.tgz"
+  integrity sha512-baNZyqaaLhyLVKm/DlvdW051MSgO6b8eVfIezl9E5PqWxFgzLm/wQntEW4zOytVburDEr0JlALEpdOFwvErLsg==
+
 balanced-match@^1.0.0:
   version "1.0.2"
   resolved "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz"
@@ -1712,6 +1717,14 @@ mongoose-delete@^1.0.2:
   resolved "https://registry.npmjs.org/mongoose-delete/-/mongoose-delete-1.0.2.tgz"
   integrity sha512-W+p9ULLiYHcEz77wQECp6gNnh2NcXf30KRIE3nAyjjsStqmBKJDL5eXTnX0xerGG2gCGx6mI7bO3+ch88tQ+tg==
 
+mongoose-sequence@^6.0.1:
+  version "6.0.1"
+  resolved "https://registry.npmjs.org/mongoose-sequence/-/mongoose-sequence-6.0.1.tgz"
+  integrity sha512-uXnLCW9pu2V49Xw8BmdXdeRugd2mv+ntu3nT2Bbm33pNRmmvHE2GKA+8BASKoQt960McLX4VL78wkb492f6MoQ==
+  dependencies:
+    async "^3.2.5"
+    lodash "^4.17.21"
+
 mongoose-slug-generator@^1.0.4:
   version "1.0.4"
   resolved "https://registry.npmjs.org/mongoose-slug-generator/-/mongoose-slug-generator-1.0.4.tgz"
@@ -1731,7 +1744,7 @@ mongoose-slug-updater@^3.3.0:
     shortid "^2.2.16"
     speakingurl "^14.0.1"
 
-mongoose@^8.4.1, "mongoose@5.x || 6.x || 7.x || 8.x":
+mongoose@^8.4.1, mongoose@>=5, "mongoose@5.x || 6.x || 7.x || 8.x":
   version "8.4.1"
   resolved "https://registry.npmjs.org/mongoose/-/mongoose-8.4.1.tgz"
   integrity sha512-odQ2WEWGL3hb0Qex+QMN4eH6D34WdMEw7F1If2MGABApSDmG9cMmqv/G1H6WsXmuaH9mkuuadW/WbLE5+tHJwA==
