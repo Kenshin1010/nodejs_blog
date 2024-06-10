@@ -27,7 +27,7 @@
   },
   "homepage": "https://github.com/Kenshin1010/nodejs_blog#readme",
   "lint-staged": {
-    "src/**/*.{js,json,scss,hbs}": "prettier --single-quote --trailing-comma all --tab-width 4 --write "
+    "src/**/*.{js,json,scss}": "prettier --single-quote --trailing-comma all --tab-width 4 --write "
   },
   "husky": {
     "hooks": {
@@ -35,6 +35,8 @@
     }
   },
   "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-icons": "^1.11.3",
     "express": "^4.19.2",
     "express-handlebars": "^7.1.2",
     "jquery": "^3.7.1",

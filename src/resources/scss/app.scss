@@ -31,3 +31,25 @@ a {
   width: 160px;
   margin: 0 8px;
 }
+
+.elevator-icon,
+.sort-ascending-icon,
+.sort-descending-icon {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.elevator-icon {
+  background-image: url("../img/elevator.svg");
+}
+
+.sort-ascending-icon {
+  background-image: url("../img/sort-ascending.svg");
+}
+
+.sort-descending-icon {
+  background-image: url("../img/sort-descending.svg");
+}

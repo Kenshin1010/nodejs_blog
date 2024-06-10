@@ -14,11 +14,11 @@ const Course = new Schema(
     slug: {
       type: String,
       slug: ["name"],
-      unique: true,
-    },
+      unique: true
+    }
   },
   {
-    timestamps: true,
+    timestamps: true
   }
 );
 
